@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>ACMA RRL licence-presence row — SITA Technologies Australia Pty Limited — aeronautical_services</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}
+h1{font-size:1.3rem} table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid #bbb;padding:6px 10px;text-align:left;vertical-align:top;font-size:0.95rem}
+th{background:#eef;white-space:nowrap} code{background:#f4f4f4;padding:1px 4px}
+.prov td{background:#fafafa}</style></head>
+<body>
+<h1>ACMA Register of Radiocommunications Licences (RRL) — licence-presence row artifact</h1>
+<p>This page reproduces one organisational licence row extracted from the official ACMA RRL data download, for the <strong>aeronautical_services</strong> service bucket.</p>
+
+<h2>Official ACMA RRL source provenance</h2>
+<table class="prov">
+<tr><th>ACMA source page</th><td><a href="https://www.acma.gov.au/radiocomms-licence-data">https://www.acma.gov.au/radiocomms-licence-data</a></td></tr>
+<tr><th>ACMA source download URL</th><td><code>https://web.acma.gov.au/rrl/spectra_rrl.zip</code></td></tr>
+<tr><th>Data vintage / archive date</th><td>2026-07-26 (spectra_rrl.zip download; internal client.csv/licence.csv timestamp 2026-07-27 08:06:38 AEST, i.e. 2026-07-26 22:06 UTC)</td></tr>
+<tr><th>client.csv locator</th><td><code>spectra_rrl.zip!/client.csv</code></td></tr>
+<tr><th>licence.csv locator</th><td><code>spectra_rrl.zip!/licence.csv</code></td></tr>
+</table>
+
+<h2>Client row (from client.csv)</h2>
+<table>
+<tr><th>CLIENT_NO</th><td>20045522</td></tr>
+<tr><th>LICENCEE (organisation)</th><td>SITA Technologies Australia Pty Limited</td></tr>
+<tr><th>TRADING_NAME</th><td>SITA Technologies Australia Pty Limited</td></tr>
+<tr><th>ACN</th><td></td></tr>
+<tr><th>ABN</th><td>11131818847</td></tr>
+<tr><th>CLIENT_TYPE_ID</th><td>5 (Company) — organisational, non-natural-person (not CLIENT_TYPE_ID=7 Person)</td></tr>
+</table>
+
+<h2>Licence row (from licence.csv)</h2>
+<table>
+<tr><th>LICENCE_NO</th><td>10054899/2</td></tr>
+<tr><th>CLIENT_NO (FK)</th><td>20045522</td></tr>
+<tr><th>SV_ID / service</th><td>8 (Aeronautical)</td></tr>
+<tr><th>LICENCE_TYPE_NAME</th><td>Aeronautical</td></tr>
+<tr><th>LICENCE_CATEGORY_NAME</th><td>Aeronautical Assigned System</td></tr>
+<tr><th>STATUS / STATUS_TEXT</th><td>1 (Granted)</td></tr>
+<tr><th>DATE_ISSUED</th><td>2025-08-14</td></tr>
+<tr><th>DATE_OF_EXPIRY</th><td>2026-09-14</td></tr>
+</table>
+
+<h2>Machine-readable JSON</h2>
+<pre id="json">{
+  &quot;acma_source_page&quot;: &quot;https://www.acma.gov.au/radiocomms-licence-data&quot;,
+  &quot;acma_source_download_url&quot;: &quot;https://web.acma.gov.au/rrl/spectra_rrl.zip&quot;,
+  &quot;data_vintage_archive_date&quot;: &quot;2026-07-26 (spectra_rrl.zip download; internal client.csv/licence.csv timestamp 2026-07-27 08:06:38 AEST, i.e. 2026-07-26 22:06 UTC)&quot;,
+  &quot;client_csv_locator&quot;: &quot;spectra_rrl.zip!/client.csv&quot;,
+  &quot;licence_csv_locator&quot;: &quot;spectra_rrl.zip!/licence.csv&quot;,
+  &quot;service_bucket&quot;: &quot;aeronautical_services&quot;,
+  &quot;service_name&quot;: &quot;Aeronautical&quot;,
+  &quot;client_row&quot;: {
+    &quot;CLIENT_NO&quot;: &quot;20045522&quot;,
+    &quot;LICENCEE&quot;: &quot;SITA Technologies Australia Pty Limited&quot;,
+    &quot;TRADING_NAME&quot;: &quot;SITA Technologies Australia Pty Limited&quot;,
+    &quot;ACN&quot;: &quot;&quot;,
+    &quot;ABN&quot;: &quot;11131818847&quot;,
+    &quot;CLIENT_TYPE_ID&quot;: &quot;5&quot;,
+    &quot;CLIENT_TYPE_NAME&quot;: &quot;Company&quot;
+  },
+  &quot;licence_row&quot;: {
+    &quot;LICENCE_NO&quot;: &quot;10054899/2&quot;,
+    &quot;CLIENT_NO&quot;: &quot;20045522&quot;,
+    &quot;SV_ID&quot;: &quot;8&quot;,
+    &quot;LICENCE_TYPE_NAME&quot;: &quot;Aeronautical&quot;,
+    &quot;LICENCE_CATEGORY_NAME&quot;: &quot;Aeronautical Assigned System&quot;,
+    &quot;STATUS&quot;: &quot;1&quot;,
+    &quot;STATUS_TEXT&quot;: &quot;Granted&quot;,
+    &quot;DATE_ISSUED&quot;: &quot;2025-08-14&quot;,
+    &quot;DATE_OF_EXPIRY&quot;: &quot;2026-09-14&quot;
+  }
+}</pre>
+</body></html>
