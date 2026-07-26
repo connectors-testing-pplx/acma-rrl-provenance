@@ -19,31 +19,31 @@ client_type.csv locator: spectra_rrl.zip -> client_type.csv
 
 --- CLIENT ROW (from client.csv) ---
 client.csv column header: CLIENT_NO,LICENCEE,TRADING_NAME,ACN,ABN,POSTAL_STREET,POSTAL_SUBURB,POSTAL_STATE,POSTAL_POSTCODE,CAT_ID,CLIENT_TYPE_ID,FEE_STATUS_ID
-client.csv row: 59938,Department of Transport and Main Roads (Queensland Transport),Department of Transport and Main Roads (Queensland Transport),,13200330520,MacArthur Avenue East (Mgr MTS Section),PINKENBA,QLD,4008,7,3,1
+client.csv row: 1501027,The South Australian Sea Rescue Squadron Inc,The South Australian Sea Rescue Squadron Inc,,17808419845,PO Box 267,GLENELG,SA,5045,15,6,3
 
 Parsed client fields:
-  CLIENT_NO      = 59938
-  LICENCEE       = Department of Transport and Main Roads (Queensland Transport)
+  CLIENT_NO      = 1501027
+  LICENCEE       = The South Australian Sea Rescue Squadron Inc
   ACN            = 
-  ABN            = 13200330520
-  CLIENT_TYPE_ID = 3  (State Government)
-  Non-natural-person classification: CLIENT_TYPE_ID=3 is an organisational client type (NOT CLIENT_TYPE_ID=7 'Person'); this is an ABN-backed organisational licensee.
+  ABN            = 17808419845
+  CLIENT_TYPE_ID = 6  (Community or Volunteer Group)
+  Non-natural-person classification: CLIENT_TYPE_ID=6 is an organisational client type (NOT CLIENT_TYPE_ID=7 'Person'); this is an ABN-backed organisational licensee.
 
 --- LICENCE ROW (from licence.csv) ---
 licence.csv column header: LICENCE_NO,CLIENT_NO,SV_ID,SS_ID,LICENCE_TYPE_NAME,LICENCE_CATEGORY_NAME,DATE_ISSUED,DATE_OF_EFFECT,DATE_OF_EXPIRY,STATUS,STATUS_TEXT,AP_ID,AP_PRJ_IDENT,SHIP_NAME,BSL_NO,AWL_TYPE
-licence.csv row: 10109338/1,59938,5,501,Maritime Coast,Limited Coast Assigned System,2025-09-25,2025-09-25,2026-09-22,1,Granted,10109571,1143026_MSQ03,,,
+licence.csv row: 10729898/1,1501027,5,503,Maritime Coast,Limited Coast Non Assigned,2026-07-04,2026-07-04,2027-08-13,1,Granted,10729967,,,,
 
 Parsed licence fields:
-  LICENCE_NO            = 10109338/1
-  CLIENT_NO             = 59938
+  LICENCE_NO            = 10729898/1
+  CLIENT_NO             = 1501027
   SV_ID (service)       = 5  (Maritime Coast)
-  SS_ID (subservice)    = 501
+  SS_ID (subservice)    = 503
   LICENCE_TYPE_NAME     = Maritime Coast
-  LICENCE_CATEGORY_NAME = Limited Coast Assigned System
+  LICENCE_CATEGORY_NAME = Limited Coast Non Assigned
   STATUS                = 1
   STATUS_TEXT           = Granted
-  DATE_OF_EFFECT        = 2025-09-25
-  DATE_OF_EXPIRY        = 2026-09-22
+  DATE_OF_EFFECT        = 2026-07-04
+  DATE_OF_EXPIRY        = 2027-08-13
 
 --- CLIENT_TYPE reference (client_type.csv) ---
 TYPE_ID,NAME
@@ -56,4 +56,4 @@ TYPE_ID,NAME
 7,Person
 
 --- SUMMARY ---
-Organisation "Department of Transport and Main Roads (Queensland Transport)" (ABN 13200330520, CLIENT_TYPE_ID 3 = State Government) holds ACMA licence number 10109338/1, licence type "Maritime Coast", category "Limited Coast Assigned System", service "Maritime Coast", status "Granted", present in the ACMA RRL current full extract (spectra_rrl.zip, extract datetime 202607262243) for the maritime_coast service bucket.
+Organisation "The South Australian Sea Rescue Squadron Inc" (ABN 17808419845, CLIENT_TYPE_ID 6 = Community or Volunteer Group) holds ACMA licence number 10729898/1, licence type "Maritime Coast", category "Limited Coast Non Assigned", service "Maritime Coast", status "Granted", present in the ACMA RRL current full extract (spectra_rrl.zip, extract datetime 202607262243) for the maritime_coast service bucket.
