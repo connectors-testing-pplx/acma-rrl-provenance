@@ -1,0 +1,59 @@
+ACMA RRL LICENCE-PRESENCE ROW ARTIFACT
+=======================================================================
+Service bucket (this task): spectrum_public_network
+Bucket meaning: Spectrum / PTS licence (public-network, mobile, carrier-style communications service)
+
+--- OFFICIAL ACMA RRL SOURCE PROVENANCE ---
+Official ACMA source (full RRL dataset ZIP): https://cdn.acma.gov.au/rrl/spectra_rrl.zip
+ACMA data-download landing page: https://www.acma.gov.au/radiocomms-licence-data
+ACMA Extracts metadata endpoint (official): https://backend.acma.gov.au/rrl/v1/Extracts
+Data vintage / extract datetime endpoint (official): https://backend.acma.gov.au/rrl/v1/Extracts/datetime-of-extract.txt
+Data vintage / extract datetime value: 202607262243
+Data vintage (human readable): 2026-07-26T22:43 (AEST) / LastModified 2026-07-26T12:43:33Z
+This row was extracted from the ACMA-published current full extract "spectra_rrl.zip" (IsFullExtract=true).
+
+--- FILE LOCATORS INSIDE THE OFFICIAL EXTRACT ---
+client.csv locator: spectra_rrl.zip -> client.csv
+licence.csv locator: spectra_rrl.zip -> licence.csv
+client_type.csv locator: spectra_rrl.zip -> client_type.csv
+
+--- CLIENT ROW (from client.csv) ---
+client.csv column header: CLIENT_NO,LICENCEE,TRADING_NAME,ACN,ABN,POSTAL_STREET,POSTAL_SUBURB,POSTAL_STATE,POSTAL_POSTCODE,CAT_ID,CLIENT_TYPE_ID,FEE_STATUS_ID
+client.csv row: 20021277,BAI NETWORKS PTY LTD,BAI NETWORKS PTY LTD,603280379,64603280379,PO Box 7063,CLOISTERS SQUARE PO,WA,6850,,5,1
+
+Parsed client fields:
+  CLIENT_NO      = 20021277
+  LICENCEE       = BAI NETWORKS PTY LTD
+  ACN            = 603280379
+  ABN            = 64603280379
+  CLIENT_TYPE_ID = 5  (Company)
+  Non-natural-person classification: CLIENT_TYPE_ID=5 is an organisational client type (NOT CLIENT_TYPE_ID=7 'Person'); this is an ABN-backed organisational licensee.
+
+--- LICENCE ROW (from licence.csv) ---
+licence.csv column header: LICENCE_NO,CLIENT_NO,SV_ID,SS_ID,LICENCE_TYPE_NAME,LICENCE_CATEGORY_NAME,DATE_ISSUED,DATE_OF_EFFECT,DATE_OF_EXPIRY,STATUS,STATUS_TEXT,AP_ID,AP_PRJ_IDENT,SHIP_NAME,BSL_NO,AWL_TYPE
+licence.csv row: 10416707/6,20021277,10,125,PTS,PMTS Class B,2026-05-08,2026-05-08,2027-05-31,1,Granted,11992557,20048305_Titan-LTE-remove_SDAnSTP,,,
+
+Parsed licence fields:
+  LICENCE_NO            = 10416707/6
+  CLIENT_NO             = 20021277
+  SV_ID (service)       = 10  (PTS)
+  SS_ID (subservice)    = 125
+  LICENCE_TYPE_NAME     = PTS
+  LICENCE_CATEGORY_NAME = PMTS Class B
+  STATUS                = 1
+  STATUS_TEXT           = Granted
+  DATE_OF_EFFECT        = 2026-05-08
+  DATE_OF_EXPIRY        = 2027-05-31
+
+--- CLIENT_TYPE reference (client_type.csv) ---
+TYPE_ID,NAME
+1,Commonwealth Department
+2,Other Commonwealth Agency
+3,State Government
+4,Local Government
+5,Company
+6,Community or Volunteer Group
+7,Person
+
+--- SUMMARY ---
+Organisation "BAI NETWORKS PTY LTD" (ABN 64603280379, CLIENT_TYPE_ID 5 = Company) holds ACMA licence number 10416707/6, licence type "PTS", category "PMTS Class B", service "PTS", status "Granted", present in the ACMA RRL current full extract (spectra_rrl.zip, extract datetime 202607262243) for the spectrum_public_network service bucket.
