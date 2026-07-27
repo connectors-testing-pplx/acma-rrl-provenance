@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACMA RRL licence-presence row artifact — DEPARTMENT OF HOME AFFAIRS (maritime_coast)</title>
+<style>body{font-family:system-ui,Arial,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #ccc;padding:6px 10px;text-align:left;vertical-align:top}th{background:#f4f4f4;width:34%}code{background:#f0f0f0;padding:1px 4px}h1{font-size:1.3rem}h2{font-size:1.05rem;margin-top:1.5rem}.note{color:#444;font-size:.92rem}</style>
+</head><body>
+<h1>ACMA Register of Radiocommunications Licences (RRL) — licence-presence row artifact</h1>
+<p class="note">This page reproduces one organisational licence row extracted from the official ACMA RRL data download, for the <strong>maritime_coast</strong> service bucket. It is a verbatim reproduction of one <code>client.csv</code> row joined to one <code>licence.csv</code> row from the official ACMA RRL current download.</p>
+
+<h2>Official ACMA RRL source and data provenance</h2>
+<table>
+<tr><th>ACMA source page</th><td>https://www.acma.gov.au/radiocomms-licence-data</td></tr>
+<tr><th>ACMA source download URL</th><td><code>https://web.acma.gov.au/rrl-data/spectra_rrl.zip</code></td></tr>
+<tr><th>Data vintage / archive date</th><td>2026-07-27 (spectra_rrl.zip; HTTP Last-Modified Mon, 27 Jul 2026 15:35:59 GMT; internal client.csv/licence.csv timestamp 2026-07-28 01:35:46 AEST = 2026-07-27 15:35 UTC)</td></tr>
+<tr><th>client.csv locator</th><td><code>spectra_rrl.zip!/client.csv</code></td></tr>
+<tr><th>licence.csv locator</th><td><code>spectra_rrl.zip!/licence.csv</code></td></tr>
+</table>
+
+<h2>client.csv row (organisational client)</h2>
+<table>
+<tr><th>CLIENT_NO</th><td>20026788</td></tr>
+<tr><th>LICENCEE (organisation)</th><td>DEPARTMENT OF HOME AFFAIRS</td></tr>
+<tr><th>TRADING_NAME</th><td>CCTV &amp; Enforcement Communications</td></tr>
+<tr><th>ACN</th><td>(none)</td></tr>
+<tr><th>ABN</th><td>33380054835</td></tr>
+<tr><th>CLIENT_TYPE_ID</th><td>2 (Other Commonwealth Agency) — organisational, non-natural-person client (NOT CLIENT_TYPE_ID=7 Person)</td></tr>
+</table>
+
+<h2>licence.csv row (this licence)</h2>
+<table>
+<tr><th>LICENCE_NO</th><td>1138980/2</td></tr>
+<tr><th>CLIENT_NO (foreign key)</th><td>20026788</td></tr>
+<tr><th>SV_ID / service</th><td>5 (Maritime Coast)</td></tr>
+<tr><th>LICENCE_TYPE_NAME</th><td>Maritime Coast</td></tr>
+<tr><th>LICENCE_CATEGORY_NAME</th><td>Limited Coast Assigned System</td></tr>
+<tr><th>STATUS / STATUS_TEXT</th><td>1 (Granted)</td></tr>
+<tr><th>DATE_ISSUED</th><td>2026-06-10</td></tr>
+<tr><th>DATE_OF_EXPIRY</th><td>2027-06-19</td></tr>
+</table>
+<p class="note">Service bucket <code>maritime_coast</code> presence is established by SV_ID 5 (Maritime Coast) on this granted licence held by an organisational (CLIENT_TYPE_ID=2, Other Commonwealth Agency) ABN-backed licensee.</p>
+</body></html>

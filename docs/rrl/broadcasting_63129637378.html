@@ -1,38 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>ACMA RRL licence-presence row — SPORTS ENTERTAINMENT NETWORK PTY LTD — broadcasting</title>
-<style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}
-h1{font-size:1.3rem} table{border-collapse:collapse;width:100%;margin:1rem 0}
-th,td{border:1px solid #bbb;padding:6px 10px;text-align:left;vertical-align:top;font-size:0.95rem}
-th{background:#eef;white-space:nowrap} code{background:#f4f4f4;padding:1px 4px}
-.prov td{background:#fafafa}</style></head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACMA RRL licence-presence row artifact — SPORTS ENTERTAINMENT NETWORK PTY LTD (broadcasting)</title>
+<style>body{font-family:system-ui,Arial,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #ccc;padding:6px 10px;text-align:left;vertical-align:top}th{background:#f4f4f4;width:34%}code{background:#f0f0f0;padding:1px 4px}h1{font-size:1.3rem}h2{font-size:1.05rem;margin-top:1.5rem}.note{color:#444;font-size:.92rem}</style>
+</head><body>
 <h1>ACMA Register of Radiocommunications Licences (RRL) — licence-presence row artifact</h1>
-<p>This page reproduces one organisational licence row extracted from the official ACMA RRL data download, for the <strong>broadcasting</strong> service bucket.</p>
+<p class="note">This page reproduces one organisational licence row extracted from the official ACMA RRL data download, for the <strong>broadcasting</strong> service bucket. It is a verbatim reproduction of one <code>client.csv</code> row joined to one <code>licence.csv</code> row from the official ACMA RRL current download.</p>
 
-<h2>Official ACMA RRL source provenance</h2>
-<table class="prov">
-<tr><th>ACMA source page</th><td><a href="https://www.acma.gov.au/radiocomms-licence-data">https://www.acma.gov.au/radiocomms-licence-data</a></td></tr>
-<tr><th>ACMA source download URL</th><td><code>https://web.acma.gov.au/rrl/spectra_rrl.zip</code></td></tr>
-<tr><th>Data vintage / archive date</th><td>2026-07-26 (spectra_rrl.zip download; internal client.csv/licence.csv timestamp 2026-07-27 08:06:38 AEST, i.e. 2026-07-26 22:06 UTC)</td></tr>
+<h2>Official ACMA RRL source and data provenance</h2>
+<table>
+<tr><th>ACMA source page</th><td>https://www.acma.gov.au/radiocomms-licence-data</td></tr>
+<tr><th>ACMA source download URL</th><td><code>https://web.acma.gov.au/rrl-data/spectra_rrl.zip</code></td></tr>
+<tr><th>Data vintage / archive date</th><td>2026-07-27 (spectra_rrl.zip; HTTP Last-Modified Mon, 27 Jul 2026 15:35:59 GMT; internal client.csv/licence.csv timestamp 2026-07-28 01:35:46 AEST = 2026-07-27 15:35 UTC)</td></tr>
 <tr><th>client.csv locator</th><td><code>spectra_rrl.zip!/client.csv</code></td></tr>
 <tr><th>licence.csv locator</th><td><code>spectra_rrl.zip!/licence.csv</code></td></tr>
 </table>
 
-<h2>Client row (from client.csv)</h2>
+<h2>client.csv row (organisational client)</h2>
 <table>
 <tr><th>CLIENT_NO</th><td>8126387</td></tr>
 <tr><th>LICENCEE (organisation)</th><td>SPORTS ENTERTAINMENT NETWORK PTY LTD</td></tr>
 <tr><th>TRADING_NAME</th><td>Previously named Crocmedia Pty Ltd</td></tr>
 <tr><th>ACN</th><td>129637378</td></tr>
 <tr><th>ABN</th><td>63129637378</td></tr>
-<tr><th>CLIENT_TYPE_ID</th><td>5 (Company) — organisational, non-natural-person (not CLIENT_TYPE_ID=7 Person)</td></tr>
+<tr><th>CLIENT_TYPE_ID</th><td>5 (Company) — organisational, non-natural-person client (NOT CLIENT_TYPE_ID=7 Person)</td></tr>
 </table>
 
-<h2>Licence row (from licence.csv)</h2>
+<h2>licence.csv row (this licence)</h2>
 <table>
 <tr><th>LICENCE_NO</th><td>4145</td></tr>
-<tr><th>CLIENT_NO (FK)</th><td>8126387</td></tr>
+<tr><th>CLIENT_NO (foreign key)</th><td>8126387</td></tr>
 <tr><th>SV_ID / service</th><td>90 (Broadcast Service Licence)</td></tr>
 <tr><th>LICENCE_TYPE_NAME</th><td>Broadcast Service Licence</td></tr>
 <tr><th>LICENCE_CATEGORY_NAME</th><td>Commercial Radio Broadcasting</td></tr>
@@ -40,35 +37,5 @@ th{background:#eef;white-space:nowrap} code{background:#f4f4f4;padding:1px 4px}
 <tr><th>DATE_ISSUED</th><td>2025-09-04</td></tr>
 <tr><th>DATE_OF_EXPIRY</th><td>2027-06-09</td></tr>
 </table>
-
-<h2>Machine-readable JSON</h2>
-<pre id="json">{
-  &quot;acma_source_page&quot;: &quot;https://www.acma.gov.au/radiocomms-licence-data&quot;,
-  &quot;acma_source_download_url&quot;: &quot;https://web.acma.gov.au/rrl/spectra_rrl.zip&quot;,
-  &quot;data_vintage_archive_date&quot;: &quot;2026-07-26 (spectra_rrl.zip download; internal client.csv/licence.csv timestamp 2026-07-27 08:06:38 AEST, i.e. 2026-07-26 22:06 UTC)&quot;,
-  &quot;client_csv_locator&quot;: &quot;spectra_rrl.zip!/client.csv&quot;,
-  &quot;licence_csv_locator&quot;: &quot;spectra_rrl.zip!/licence.csv&quot;,
-  &quot;service_bucket&quot;: &quot;broadcasting&quot;,
-  &quot;service_name&quot;: &quot;Broadcast Service Licence&quot;,
-  &quot;client_row&quot;: {
-    &quot;CLIENT_NO&quot;: &quot;8126387&quot;,
-    &quot;LICENCEE&quot;: &quot;SPORTS ENTERTAINMENT NETWORK PTY LTD&quot;,
-    &quot;TRADING_NAME&quot;: &quot;Previously named Crocmedia Pty Ltd&quot;,
-    &quot;ACN&quot;: &quot;129637378&quot;,
-    &quot;ABN&quot;: &quot;63129637378&quot;,
-    &quot;CLIENT_TYPE_ID&quot;: &quot;5&quot;,
-    &quot;CLIENT_TYPE_NAME&quot;: &quot;Company&quot;
-  },
-  &quot;licence_row&quot;: {
-    &quot;LICENCE_NO&quot;: &quot;4145&quot;,
-    &quot;CLIENT_NO&quot;: &quot;8126387&quot;,
-    &quot;SV_ID&quot;: &quot;90&quot;,
-    &quot;LICENCE_TYPE_NAME&quot;: &quot;Broadcast Service Licence&quot;,
-    &quot;LICENCE_CATEGORY_NAME&quot;: &quot;Commercial Radio Broadcasting&quot;,
-    &quot;STATUS&quot;: &quot;1&quot;,
-    &quot;STATUS_TEXT&quot;: &quot;Granted&quot;,
-    &quot;DATE_ISSUED&quot;: &quot;2025-09-04&quot;,
-    &quot;DATE_OF_EXPIRY&quot;: &quot;2027-06-09&quot;
-  }
-}</pre>
+<p class="note">Service bucket <code>broadcasting</code> presence is established by SV_ID 90 (Broadcast Service Licence) on this granted licence held by an organisational (CLIENT_TYPE_ID=5, Company) ABN-backed licensee.</p>
 </body></html>
